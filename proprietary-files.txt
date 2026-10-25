@@ -52,8 +52,6 @@ vendor/lib64/libspatializerparamstorage.so
 vendor/lib64/libvibratorutils.so
 
 # Audio configs
-etc/audio_effects.conf
-etc/audio_effects.xml
 system_ext/etc/a2dp_audio_policy_configuration.xml
 system_ext/etc/a2dp_in_audio_policy_configuration.xml
 system_ext/etc/audio_policy_configuration.xml
@@ -1009,10 +1007,6 @@ vendor/bin/hw/android.hardware.cas-service.example
 vendor/etc/vintf/manifest/android.hardware.cas-service.xml
 
 # Display
-lib64/com.motorola.hardware.display.panel-V1-ndk.so
-lib64/com.motorola.hardware.display.panel-V2-ndk.so
-lib64/com.motorola.hardware.display.panel@1.0.so
-lib64/com.motorola.hardware.display.panel@1.1.so
 system_ext/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so
 system_ext/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.pq@2.0.so
@@ -1187,7 +1181,6 @@ vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_nTelos.xml
 vendor/etc/gnss/agps_profiles_conf2.xml
 
 # Health
-lib64/motorola.hardware.health.storage@1.0.so
 vendor/bin/hw/android.hardware.health-service.example
 vendor/bin/hw/motorola.hardware.health-service
 vendor/bin/hw/motorola.hardware.health.storage-service
@@ -1221,17 +1214,6 @@ vendor/lib64/vendor.mediatek.hardware.mtklight-V1-ndk.so
 vendor/lib64/hw/local_time.default.so
 
 # Media
-etc/seccomp_policy/mediacodec.policy
-lib64/graphicbuffersource-aidl-ndk.so
-lib64/libaconfig_storage_read_api_cc.so
-lib64/libmedia_codeclist.so
-lib64/libmedia_codeclist_capabilities.so
-lib64/libstagefright_aidl_bufferpool2.so
-lib64/libstagefright_bufferpool@2.0.1.so
-lib64/libstagefright_codecbase.so
-lib64/libstagefright_framecapture_utils.so
-lib64/libstagefright_graphicbuffersource_aidl.so
-lib64/libstagefright_surface_utils.so
 system_ext/lib64/libstagefright_hdcp.so
 system_ext/lib64/libstagefright_mbrain.so
 system_ext/lib64/libstagefright_wfd_mtk.so
@@ -1309,7 +1291,6 @@ vendor/lib/nfc_nci.st21nfc.st.so
 vendor/lib64/nfc_nci.st21nfc.st.so
 
 # NFC configs
-etc/libnfc-nci.conf
 vendor/etc/libnfc-hal-st-felica-uicc.conf
 vendor/etc/libnfc-hal-st-felica.conf
 vendor/etc/libnfc-hal-st-prc.conf
@@ -1506,7 +1487,6 @@ vendor/etc/vintf/manifest/android.hardware.usb-aidl-service.mediatek.xml
 vendor/etc/vintf/manifest/android.hardware.usb.gadget-aidl-service.mediatek.xml
 
 # Vibrator
-lib64/motorola.hardware.vibrator@1.0.so
 vendor/bin/hw/android.hardware.vibrator-service.mediatek
 vendor/lib64/hw/vibrator.default.so
 vendor/lib64/libaacvibrator.so
@@ -1547,16 +1527,6 @@ vendor/etc/wifi/wpa_supplicant.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # Miscellaneous
-odm/etc/vintf/manifest_dn.xml
-odm/etc/vintf/manifest_dns.xml
-odm/etc/vintf/manifest_dnsf.xml
-odm/etc/vintf/manifest_dsds.xml
-odm/etc/vintf/manifest_n.xml
-odm/etc/vintf/manifest_ns.xml
-odm/etc/vintf/manifest_nsf.xml
-odm/etc/vintf/manifest_qsqs.xml
-odm/etc/vintf/manifest_ss.xml
-odm/etc/vintf/manifest_tsts.xml
 vendor/app/GoogleNetworkStackResOverlay/GoogleNetworkStackResOverlay.apk
 vendor/app/GoogleTetheringResOverlay/GoogleTetheringResOverlay.apk
 vendor/app/InProcessTetheringResOverlay/InProcessTetheringResOverlay.apk
@@ -3487,28 +3457,28 @@ vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.2.so
 vendor/lib64/vendor.tsa.hdcp-V1-ndk.so
 vendor/lib64/vendor.zuialarm.hardware.alarm-V1-ndk.so
-vendor/odm/etc/permissions/sku_dns/android.hardware.nfc.ese.xml
-vendor/odm/etc/permissions/sku_dns/android.hardware.se.omapi.ese.xml
-vendor/odm/etc/permissions/sku_dns/android.hardware.strongbox_keystore.xml
-vendor/odm/etc/permissions/sku_dnsf/android.hardware.nfc.ese.xml
-vendor/odm/etc/permissions/sku_dnsf/android.hardware.se.omapi.ese.xml
-vendor/odm/etc/permissions/sku_dnsf/android.hardware.strongbox_keystore.xml
-vendor/odm/etc/permissions/sku_ns/android.hardware.nfc.ese.xml
-vendor/odm/etc/permissions/sku_ns/android.hardware.se.omapi.ese.xml
-vendor/odm/etc/permissions/sku_ns/android.hardware.strongbox_keystore.xml
-vendor/odm/etc/permissions/sku_nsf/android.hardware.nfc.ese.xml
-vendor/odm/etc/permissions/sku_nsf/android.hardware.se.omapi.ese.xml
-vendor/odm/etc/permissions/sku_nsf/android.hardware.strongbox_keystore.xml
-vendor/odm/etc/vintf/manifest_dn.xml
-vendor/odm/etc/vintf/manifest_dns.xml
-vendor/odm/etc/vintf/manifest_dnsf.xml
-vendor/odm/etc/vintf/manifest_dsds.xml
-vendor/odm/etc/vintf/manifest_n.xml
-vendor/odm/etc/vintf/manifest_ns.xml
-vendor/odm/etc/vintf/manifest_nsf.xml
-vendor/odm/etc/vintf/manifest_qsqs.xml
-vendor/odm/etc/vintf/manifest_ss.xml
-vendor/odm/etc/vintf/manifest_tsts.xml
+odm/etc/permissions/sku_dns/android.hardware.nfc.ese.xml
+odm/etc/permissions/sku_dns/android.hardware.se.omapi.ese.xml
+odm/etc/permissions/sku_dns/android.hardware.strongbox_keystore.xml
+odm/etc/permissions/sku_dnsf/android.hardware.nfc.ese.xml
+odm/etc/permissions/sku_dnsf/android.hardware.se.omapi.ese.xml
+odm/etc/permissions/sku_dnsf/android.hardware.strongbox_keystore.xml
+odm/etc/permissions/sku_ns/android.hardware.nfc.ese.xml
+odm/etc/permissions/sku_ns/android.hardware.se.omapi.ese.xml
+odm/etc/permissions/sku_ns/android.hardware.strongbox_keystore.xml
+odm/etc/permissions/sku_nsf/android.hardware.nfc.ese.xml
+odm/etc/permissions/sku_nsf/android.hardware.se.omapi.ese.xml
+odm/etc/permissions/sku_nsf/android.hardware.strongbox_keystore.xml
+odm/etc/vintf/manifest_dn.xml
+odm/etc/vintf/manifest_dns.xml
+odm/etc/vintf/manifest_dnsf.xml
+odm/etc/vintf/manifest_dsds.xml
+odm/etc/vintf/manifest_n.xml
+odm/etc/vintf/manifest_ns.xml
+odm/etc/vintf/manifest_nsf.xml
+odm/etc/vintf/manifest_qsqs.xml
+odm/etc/vintf/manifest_ss.xml
+odm/etc/vintf/manifest_tsts.xml
 vendor/res/images/lcd_test_00.png
 vendor/res/images/lcd_test_01.png
 vendor/res/images/lcd_test_02.png

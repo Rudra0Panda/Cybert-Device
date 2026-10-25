@@ -193,6 +193,14 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "fstab.mt6897",
+    src: "etc/fstab.mt6897",
+    vendor: true,
+    ramdisk: true,
+}
+
+
+prebuilt_etc {
     name: "init.connectivity.rc",
     src: "etc/init.connectivity.rc",
     sub_dir: "init/hw",

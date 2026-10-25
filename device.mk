@@ -12,7 +12,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
     android.hardware.boot@1.2-impl.recovery \
-    android.hardware.boot@1.2-service
+    android.hardware.boot@1.2-service \
+    fstab.mt6897
 
 PRODUCT_PACKAGES += \
     update_engine \
@@ -108,7 +109,8 @@ PRODUCT_PACKAGES += \
     multi_init.rc \
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.enableswap:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.enableswap
+    $(LOCAL_PATH)/rootdir/etc/fstab.enableswap:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.enableswap \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6897:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6897
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
