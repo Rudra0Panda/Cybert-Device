@@ -1,0 +1,37 @@
+# Audio
+audio.deep_buffer.media=true
+audio.offload.disable=false
+audio.offload.gapless.enabled=false
+audio.offload.min.duration.secs=60
+audio.offload.video=false
+persist.vendor.audio.dualmic.config=endfire
+persist.vendor.audio.fluence.speaker=false
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicecomm=true
+persist.vendor.audio.fluence.voicerec=false
+vendor.audio.parser.ip.buffer.size=262144
+vendor.audio.snd_card.open.retries=50
+
+# Camera
+persist.vendor.camera.expose.aux=1
+vendor.camera.aux.packagelist=com.motorola.camera3,com.motorola.camera5,com.motorola.motocit
+vendor.camera.aux.packagelist2=com.motorola.ccc,com.android.settings,com.motorola.motointelligence
+
+# Media
+media.recorder.show_manufacturer_and_model=true
+
+# Miscellaneous
+dalvik.vm.systemuicompilerfilter=speed
+persist.sys.bootupvolume=5
+persist.vendor.audio_fx.current=mmi
+ro.boot.wificountrycode=00
+ro.camera.cfa.packagelist=com.motorola.camera3,com.motorola.camera5,com.motorola.coresettingsext,com.motorola.actions
+ro.config.isolated_compilation_enabled=true
+ro.cp_system_other_odex=1
+ro.mot.platform.build_id=MW-543
+ro.mot.security.enable=true
+ro.system_ext.build.uuid=gV2nz-LSezcwhq0gHy372jrAV09T6ujk5td7w_ABOu8
+ro.system_ext.build.version.sdk_full=37.0
+ro.virtual_ab.merge_delay_seconds=300
+vendor.mm.en.sec.smoothstreaming=false
+

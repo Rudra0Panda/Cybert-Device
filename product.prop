@@ -1,0 +1,79 @@
+# Audio
+audio.record.delay=200
+ro.audio.monitorRotation=true
+ro.audio.moto_aispeech_mic_cnt=2
+ro.audio.moto_aispeech_vow=true
+ro.audio.moto_asr.supported=true
+ro.audio.stereo_head_tracking_enabled=true
+
+# Bluetooth
+persist.bluetooth.head_tracker_enabled=true
+
+# Camera
+camera.preview.spacer=false
+
+# Display
+ro.surface_flinger.enable_frame_rate_override=true
+
+# Radio
+ril.subscription.types=RUIM
+ro.telephony.default_network=26,26
+ro.telephony.esim_slot_id=1
+
+# Wi-Fi
+ro.wifi.channels=
+
+# Miscellaneous
+apexd.config.loop_wait.attempts=30
+esim.enable_esim_system_ui_by_default=true
+masterclear.allow_retain_esim_profiles_after_fdr=true
+persist.mot_bt.aptx_cert=true
+persist.mot_bt.phone_audio_asr=true
+persist.mot_bt.phone_audio_crystal_talk=true
+persist.sys.adj_interaction_boost_dynamic_support=true
+persist.sys.battery_care_dynamic_support=true
+persist.sys.carrier_config_controller_support=true
+persist.vendor.vt.RTPInfo=1
+persist.vendor.vt.supported=1
+persist.wm.extensions.enabled=true
+remote_provisioning.hostname=remoteprovisioning.googleapis.com
+remote_provisioning.strongbox.rkp_only=1
+remote_provisioning.tee.rkp_only=1
+ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.threebutton
+ro.build.uuid=gV2nz-LSezcwhq0gHy372jrAV09T6ujk5td7w_ABOu8
+ro.build.version.ci=23
+ro.build.version.sdk_full=37.0
+ro.com.google.gmsversion=17_202606
+ro.com.google.ime.kb_pad_port_l=11
+ro.com.google.ime.kb_pad_port_r=11
+ro.com.google.ime.number_row=true
+ro.com.google.ime.system_lm_dir=/product/usr/share/ime/google/d3_lms/
+ro.config.alarm_alert=Helium.ogg
+ro.config.limit_maxvolmeindex=true
+ro.config.notification_sound=Hello.ogg
+ro.config.ringtone=Moto.ogg
+ro.config.ringtone_2=Moto.ogg
+ro.config.wallpaper=product/media/wallpapers/default_moto_wallpaper.jpg
+ro.gwfcactivation.disabled_carriers=1187,1779,2119,2120,10000,10013,10021,10022,2525,2526,2527,10029,2024,2025,2027,2028,2029,2031,2534,2538,2539,10012,10028,1492,28,1839
+ro.lenovo.single_hand=1
+ro.mot.MepEnabled=true
+ro.mot.build.customerid=global
+ro.mot.satellite=true
+ro.opa.eligible_device=true
+ro.postinstall.fstab.prefix=/product
+ro.product.build.no_bionic_page_size_macro=true
+ro.product.build.uuid=gV2nz-LSezcwhq0gHy372jrAV09T6ujk5td7w_ABOu8
+ro.product.build.version.sdk_full=37.0
+ro.product.cpu.pagesize.max=16384
+ro.product.gms_premier_tier=true
+ro.product.page_size=4096
+ro.product.property_source_order=product,odm,vendor,system_ext,system
+ro.product.soc.mkt_name=MediaTek Dimensity 8350 Extreme
+ro.setupwizard.rotation_locked=true
+ro.support_one_handed_mode=true
+ro.vendor.radio.imei.sv=31
+setupwizard.feature.enable_quick_enhanced_biometrics_flow=true
+setupwizard.feature.enable_quick_start_flow=true
+setupwizard.feature.enable_restore_anytime=true
+traced.relay_producer_port=vsock://-1:2010
+
