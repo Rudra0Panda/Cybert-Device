@@ -3105,7 +3105,6 @@ vendor/firmware/txpowerctrl_JAPAN.cfg
 vendor/firmware/txpowerctrl_ROW.cfg
 vendor/firmware/valhall-1691526.wa
 vendor/firmware/wifi.cfg
-vendor/framework/com.motorola.camera.extensions.jar
 vendor/lib/libRbsFlow.so
 vendor/lib/libaal_cust.so
 vendor/lib/libaurisyslvve.so
