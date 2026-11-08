@@ -5,19 +5,19 @@ system_ext/bin/hw/android.hardware.audio.parameter_parser.service
 system_ext/etc/init/android.hardware.audio.parameter_parser.service.rc
 vendor/bin/hw/android.hardware.audio.service.mediatek
 vendor/etc/init/android.hardware.audio.service.mediatek.rc
-vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so
-vendor/lib64/hw/android.hardware.audio.effect@7.0-impl.so
-vendor/lib64/hw/audio.primary.default.so
+# vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so # Provided by AOSP source
+# vendor/lib64/hw/android.hardware.audio.effect@7.0-impl.so # Provided by AOSP source
+# vendor/lib64/hw/audio.primary.default.so # Provided by AOSP source
 vendor/lib64/hw/audio.primary.mediatek.so
 vendor/lib64/hw/audio.primary.mt6897.so
-vendor/lib64/hw/audio.r_submix.default.so
+# vendor/lib64/hw/audio.r_submix.default.so # Provided by AOSP source
 vendor/lib64/hw/audio.r_submix.mediatek.so
 vendor/lib64/hw/audio.r_submix.mt6897.so
-vendor/lib64/hw/audio.usb.default.so
+# vendor/lib64/hw/audio.usb.default.so # Provided by AOSP source
 vendor/lib64/hw/vendor.mediatek.hardware.audio-impl.so
-vendor/lib64/audioclient-types-aidl-cpp.so
-vendor/lib64/av-types-aidl-cpp.so
-vendor/lib64/framework-permission-aidl-cpp.so
+# vendor/lib64/audioclient-types-aidl-cpp.so # Provided by AOSP source
+# vendor/lib64/av-types-aidl-cpp.so # Provided by AOSP source
+# vendor/lib64/framework-permission-aidl-cpp.so # Provided by AOSP source
 vendor/lib64/libalsautils.so
 vendor/lib64/libaualgo_azp_wrapper.so
 vendor/lib64/libaualgo_foundation.so
@@ -31,7 +31,7 @@ vendor/lib64/libmediautils_vendor.so
 vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libshmemcompat.so
 vendor/lib64/libshmemutil.so
-vendor/lib64/shared-file-region-aidl-cpp.so
+# vendor/lib64/shared-file-region-aidl-cpp.so # Provided by AOSP source
 vendor/lib64/vendor.mediatek.hardware.audio-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
@@ -225,9 +225,9 @@ vendor/lib64/libnvram.so
 vendor/lib64/libnvram_sec.so
 
 # Bluetooth (A2DP)
-vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
-vendor/lib64/hw/android.hardware.bluetooth.audio@2.1-impl.so
-vendor/lib64/hw/audio.bluetooth.default.so
+# vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so # Provided by AOSP source
+# vendor/lib64/hw/android.hardware.bluetooth.audio@2.1-impl.so # Provided by AOSP source
+# vendor/lib64/hw/audio.bluetooth.default.so # Provided by AOSP source
 vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
 vendor/lib64/libbluetooth_audio_session.so
@@ -1129,7 +1129,7 @@ vendor/bin/mnld
 vendor/bin/mtk_agpsd
 vendor/etc/init/android.hardware.gnss-service.mediatek.rc
 vendor/etc/init/mtk_agpsd_p.rc
-vendor/lib64/hw/gps.default.so
+# vendor/lib64/hw/gps.default.so # Provided by AOSP source
 vendor/lib64/hw/vendor.mediatek.hardware.gnss-impl.so
 vendor/lib64/mt6897/libDR.so
 vendor/lib64/mt6897/libmnl.so
@@ -1214,7 +1214,7 @@ vendor/lib64/vendor.mediatek.hardware.mtklight-V1-ndk.so
 vendor/lib64/hw/local_time.default.so
 
 # Media
-system_ext/lib64/libstagefright_hdcp.so
+# system_ext/lib64/libstagefright_hdcp.so # Provided by AOSP source
 system_ext/lib64/libstagefright_mbrain.so
 system_ext/lib64/libstagefright_wfd_mtk.so
 system_ext/lib64/vendor.mediatek.hardware.graphics-V1-ndk.so
@@ -1229,15 +1229,15 @@ vendor/lib64/libcodec2_hidl_plugin.so
 vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libcodec2_mtk_vdec.so
 vendor/lib64/libcodec2_mtk_venc.so
-vendor/lib64/libcodec2_soft_common.so
+# vendor/lib64/libcodec2_soft_common.so # Provided by AOSP source
 vendor/lib64/libcodec2_vpp_fa_plugin.so
 vendor/lib64/libcodec2_vpp_mi_plugin.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so
-vendor/lib64/libsfplugin_ccodec_utils.so
-vendor/lib64/libstagefright_aidl_bufferpool2.so
-vendor/lib64/libstagefright_bufferpool@2.0.1.so
+# vendor/lib64/libsfplugin_ccodec_utils.so # Provided by AOSP source
+# vendor/lib64/libstagefright_aidl_bufferpool2.so # Provided by AOSP source
+# vendor/lib64/libstagefright_bufferpool@2.0.1.so # Provided by AOSP source
 
 # Media (Dolby)
 vendor/bin/hw/vendor.dolby.dms.service
@@ -1321,7 +1321,7 @@ vendor/bin/hw/vendor.mediatek.hardware.mtkpower-service.mediatek
 vendor/bin/hw/vendor.mediatek.hardware.mtkpower_applist-service.mediatek
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
-vendor/lib64/hw/power.default.so
+# vendor/lib64/hw/power.default.so # Provided by AOSP source
 vendor/lib64/hw/vendor.mediatek.hardware.mtkpower-aidl-impl.so
 vendor/lib64/libpower_timer.so
 vendor/lib64/vendor.mediatek.hardware.mtkpower-V1-ndk.so
@@ -1392,7 +1392,7 @@ vendor/lib64/vendor.mediatek.hardware.rcs@2.0.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
 
 # RenderScript
-vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so
+# vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so # Provided by AOSP source
 
 # Secure element
 vendor/bin/hw/android.hardware.secure_element-service.thales
@@ -1488,7 +1488,7 @@ vendor/etc/vintf/manifest/android.hardware.usb.gadget-aidl-service.mediatek.xml
 
 # Vibrator
 vendor/bin/hw/android.hardware.vibrator-service.mediatek
-vendor/lib64/hw/vibrator.default.so
+# vendor/lib64/hw/vibrator.default.so # Provided by AOSP source
 vendor/lib64/libaacvibrator.so
 vendor/lib64/libtiktapvibrator.so
 vendor/lib64/vendor.aac.hardware.richtap.vibrator-V1-ndk.so
