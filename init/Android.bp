@@ -144,14 +144,55 @@ sh_binary {
 
 // Init configs
 prebuilt_etc {
+    name: "fstab.enableswap",
+    src: "fstab.enableswap",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "fstab.mt6897",
     src: "fstab.mt6897",
     vendor: true,
 }
 
 prebuilt_etc {
-    name: "init.connectivity.rc",
-    src: "init.connectivity.rc",
+    name: "factory_init.connectivity.common.rc",
+    src: "factory_init.connectivity.common.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "factory_init.connectivity.rc",
+    src: "factory_init.connectivity.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "factory_init.project.rc",
+    src: "factory_init.project.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "factory_init.rc",
+    src: "factory_init.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.aee.rc",
+    src: "init.aee.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.cgroup.rc",
+    src: "init.cgroup.rc",
     relative_install_path: "init/hw",
     vendor: true,
 }
@@ -164,17 +205,31 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init_conninfra.rc",
-    src: "init_conninfra.rc",
-    relative_install_path: "init",
+    name: "init.connectivity.rc",
+    src: "init.connectivity.rc",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
-    name: "init.recovery.mt6897.rc",
-    src: "init.recovery.mt6897.rc",
-    relative_install_path: "init",
-    recovery: true,
+    name: "init_conninfra.rc",
+    src: "init_conninfra.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mmi.backup.trustlet.rc",
+    src: "init.mmi.backup.trustlet.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mmi.chipset.rc",
+    src: "init.mmi.chipset.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
 }
 
 prebuilt_etc {
@@ -187,6 +242,13 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.mmi.rc",
     src: "init.mmi.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mmi.tcmd.rc",
+    src: "init.mmi.tcmd.rc",
     relative_install_path: "init/hw",
     vendor: true,
 }
@@ -206,15 +268,15 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.mt6897.rc",
-    src: "init.mt6897.rc",
+    name: "init.mt6897.power.rc",
+    src: "init.mt6897.power.rc",
     relative_install_path: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
-    name: "init.mt6897.power.rc",
-    src: "init.mt6897.power.rc",
+    name: "init.mt6897.rc",
+    src: "init.mt6897.rc",
     relative_install_path: "init/hw",
     vendor: true,
 }
@@ -241,8 +303,78 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.pstore.rc",
+    src: "init.pstore.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.recovery.mt6897.rc",
+    src: "init.recovery.mt6897.rc",
+    relative_install_path: "init",
+    recovery: true,
+}
+
+prebuilt_etc {
     name: "init.sensor_2_0.rc",
     src: "init.sensor_2_0.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.vendor.st21nfc.rc",
+    src: "init.vendor.st21nfc.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "meta_init.connectivity.common.rc",
+    src: "meta_init.connectivity.common.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "meta_init.connectivity.rc",
+    src: "meta_init.connectivity.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "meta_init.modem.rc",
+    src: "meta_init.modem.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "meta_init.project.rc",
+    src: "meta_init.project.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "meta_init.rc",
+    src: "meta_init.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "meta_init.vendor.rc",
+    src: "meta_init.vendor.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "multi_init.rc",
+    src: "multi_init.rc",
     relative_install_path: "init/hw",
     vendor: true,
 }

@@ -76,4 +76,10 @@ setupwizard.feature.enable_quick_enhanced_biometrics_flow=true
 setupwizard.feature.enable_quick_start_flow=true
 setupwizard.feature.enable_restore_anytime=true
 traced.relay_producer_port=vsock://-1:2010
-
+# SKU
+import /product/etc/motorola/props/sku.${ro.boot.sku_variant}.prop
+import /product/etc/motorola/props/hardware.sku.${ro.boot.hardware.sku}.prop
+import /product/etc/motorola/props/sku.variant.${ro.boot.hardware.sku}.${ro.boot.sku_variant}.prop
+import /product/etc/motorola/props/carrier.${ro.boot.carrier}.prop
+import /product/etc/motorola/props/carrier.${ro.boot.carrier}.${ro.boot.device}.prop
+import /product/etc/motorola/props/carrier.${ro.boot.carrier}.sku.${ro.boot.hardware.sku}.prop

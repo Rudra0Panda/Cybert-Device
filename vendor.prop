@@ -728,4 +728,19 @@ vendor.mtk.vdec.waitkeyframeforplay=9
 vendor.performance.frs.tz_name=vtskin-max
 vendor.powerhal.disable_iosched=1
 vendor.video.framework.thumbnail.SurfaceMode=1
+# Display / Brightness
+ro.vendor.mtk_aal_support=1
+persist.vendor.sys.pq.disp.aal.bypass=1
+vendor.display.dataspace_follow_colormode=true
+vendor.display.only_report_first_mode=1
+vendor.display.boost_RR_during_brightness_dimming=1
 
+# ADB Debugging
+ro.adb.secure=0
+ro.debuggable=1
+persist.sys.usb.config=adb
+
+# SKU Props
+import /vendor/etc/motorola/props/sku.${ro.boot.sku_variant}.prop
+import /vendor/etc/motorola/props/hardware.sku.${ro.boot.hardware.sku}.prop
+import /vendor/etc/motorola/props/carrier.${ro.boot.carrier}.prop
