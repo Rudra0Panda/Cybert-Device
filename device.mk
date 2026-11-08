@@ -49,7 +49,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Product characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
 
-# Rootdir
+# Init
 PRODUCT_PACKAGES += \
     aee_exp.sh \
     apanic_annotate.sh \
@@ -74,43 +74,25 @@ PRODUCT_PACKAGES += \
     init.pstore_blk.sh \
     mot_rkp_csr_extraction.sh \
     pstore_annotate.sh \
-
-PRODUCT_PACKAGES += \
-    fstab.enableswap \
-    factory_init.connectivity.common.rc \
-    factory_init.connectivity.rc \
-    factory_init.project.rc \
-    factory_init.rc \
-    init.aee.rc \
-    init.cgroup.rc \
-    init.connectivity.common.rc \
+    fstab.mt6897 \
     init.connectivity.rc \
-    init.mmi.backup.trustlet.rc \
-    init.mmi.chipset.rc \
+    init.connectivity.common.rc \
+    init_conninfra.rc \
     init.mmi.overlay.rc \
     init.mmi.rc \
-    init.mmi.tcmd.rc \
     init.mmi.usb.configfs.rc \
     init.modem.rc \
+    init.recovery.mt6897.rc \
     init.mt6897.rc \
     init.mt6897.usb.rc \
+    init.mt6897.power.rc \
     init.mtkgki.rc \
     init.project.rc \
-    init.pstore.rc \
     init.sensor_2_0.rc \
-    init.vendor.st21nfc.rc \
-    init_conninfra.rc \
-    meta_init.connectivity.common.rc \
-    meta_init.connectivity.rc \
-    meta_init.modem.rc \
-    meta_init.project.rc \
-    meta_init.rc \
-    meta_init.vendor.rc \
-    multi_init.rc \
+    ueventd.mt6897.rc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.enableswap:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.enableswap \
-    $(LOCAL_PATH)/rootdir/etc/fstab.mt6897:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6897
+    $(DEVICE_PATH)/init/fstab.mt6897:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6897
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

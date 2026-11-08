@@ -1,12 +1,108 @@
 //
-// SPDX-FileCopyrightText: PixelOS
-//
+// SPDX-FileCopyrightText: The LineageOS Project
 // SPDX-License-Identifier: Apache-2.0
 //
 
+// Init scripts
 sh_binary {
-    name: "init.oem.hw.sh",
-    src: "init.oem.hw.sh",
+    name: "aee_exp.sh",
+    src: "aee_exp.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "apanic_annotate.sh",
+    src: "apanic_annotate.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "apanic_copy.sh",
+    src: "apanic_copy.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "apanic_mtk.sh",
+    src: "apanic_mtk.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "apanic_save.sh",
+    src: "apanic_save.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "hardware_revisions.sh",
+    src: "hardware_revisions.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "hardware_status.sh",
+    src: "hardware_status.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.insmod.sh",
+    src: "init.insmod.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.mmi.attest_model.sh",
+    src: "init.mmi.attest_model.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.mmi.backup.trustlet.sh",
+    src: "init.mmi.backup.trustlet.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.mmi.block_perm.sh",
+    src: "init.mmi.block_perm.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.mmi.boot.sh",
+    src: "init.mmi.boot.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.mmi.cap.sh",
+    src: "init.mmi.cap.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.mmi.clean_mbrain.sh",
+    src: "init.mmi.clean_mbrain.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.mmi.modem-rfs.sh",
+    src: "init.mmi.modem-rfs.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.mmi.shutdown.sh",
+    src: "init.mmi.shutdown.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.mmi.touch.sh",
+    src: "init.mmi.touch.sh",
     vendor: true,
 }
 
@@ -16,6 +112,37 @@ sh_binary {
     vendor: true,
 }
 
+sh_binary {
+    name: "init.oem.fingerprint2.sh",
+    src: "init.oem.fingerprint2.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.oem.hw.sh",
+    src: "init.oem.hw.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.pstore_blk.sh",
+    src: "init.pstore_blk.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "mot_rkp_csr_extraction.sh",
+    src: "mot_rkp_csr_extraction.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "pstore_annotate.sh",
+    src: "pstore_annotate.sh",
+    vendor: true,
+}
+
+// Init configs
 prebuilt_etc {
     name: "fstab.mt6897",
     src: "fstab.mt6897",
@@ -35,6 +162,7 @@ prebuilt_etc {
     relative_install_path: "init/hw",
     vendor: true,
 }
+
 prebuilt_etc {
     name: "init_conninfra.rc",
     src: "init_conninfra.rc",
