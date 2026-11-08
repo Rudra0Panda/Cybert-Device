@@ -115,7 +115,17 @@ PRODUCT_PACKAGES += \
     ueventd.mt6897.rc
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/init/fstab.mt6897:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6897
+    $(DEVICE_PATH)/init/fstab.mt6897:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6897 \
+    $(DEVICE_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json \
+    $(DEVICE_PATH)/configs/nfcee_access.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/nfcee_access.xml \
+    $(DEVICE_PATH)/configs/felica_docomo/common.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/common.cfg \
+    $(DEVICE_PATH)/configs/felica_docomo/mfm.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/mfm.cfg \
+    $(DEVICE_PATH)/configs/felica_docomo/mfs.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/mfs.cfg \
+    $(DEVICE_PATH)/configs/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
+    $(DEVICE_PATH)/configs/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
+
+PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
+    $(DEVICE_PATH)/configs/linker.config.json
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
